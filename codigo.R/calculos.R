@@ -321,7 +321,7 @@ orangeec %>%
   arrange(desc(Creat.Ind...GDP))
 
 TopNaranjas <- orangeec %>% 
-  filter(Country %in% c("Mexico","Panama", "Paraguay", "Argentina", "Colombia"))
+  filter(Country %in% c("Mexico","Panama", "Paraguay", "Argentina", "Colombia","Brazil"))
 
 TopNaranjas %>% 
   arrange(desc(Creat.Ind...GDP))
@@ -337,3 +337,4 @@ Mas_pesados <- mtcars %>%
 ggplot(Mas_pesados, aes(x=hp,y=mpg))+
   geom_point()+
   facet_wrap(~model)
+
